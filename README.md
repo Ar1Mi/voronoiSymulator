@@ -4,7 +4,7 @@
 
 ## Description
 
-**Voronoi Simulator V2** is an advanced Voronoi diagram simulator that accounts for wind influence, developed in Python using PyQt6. The project allows for modeling the spread of sensor influence zones under external environmental conditions.
+**Voronoi Simulator** is an advanced Voronoi diagram simulator that accounts for wind influence, developed in Python using PyQt6. The project allows for modeling the spread of sensor influence zones under external environmental conditions.
 
 ### Key Features:
 *   🌌 **Voronoi Diagram Generation:** Classical and weighted diagrams.
