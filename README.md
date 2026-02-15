@@ -1,4 +1,4 @@
-# Voronoi Simulator V2 🌪️
+# Voronoi Simulator
 
 ![Voronoi Simulator Header](HeaderReadMe.png)
 
