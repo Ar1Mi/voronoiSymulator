@@ -1,12 +1,6 @@
 # Voronoi Simulator V2 🌪️
 
-[🇺🇸 English](README.md) | [🇵🇱 Polski](README_PL.md) | [🇷🇺 Русский](README_RU.md)
-
----
-
-![Voronoi Simulator Screenshot](screenshot.png)
-
-*> Replace this text and the `screenshot.png` file with an actual screenshot of your application so users can immediately see what it looks like.*
+![Voronoi Simulator Header](HeaderReadMe.png)
 
 ## Description
 
