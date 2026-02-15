@@ -79,3 +79,21 @@ coverage.xml
 
 # Zencoder
 .zencoder/
+
+# Test Artifacts
+TestResults*/
+TestResults/
+TestResults_*/
+
+# Data & Media
+media/
+media_extracted/
+
+# Local Venv
+.venv_fix/
+
+# Gemini Venv
+.gemini_venv/
+
+# Backup files
+*.bak
