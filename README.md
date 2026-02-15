@@ -1,56 +1,60 @@
 # Voronoi Simulator V2 🌪️
 
+[🇺🇸 English](README.md) | [🇵🇱 Polski](README_PL.md) | [🇷🇺 Русский](README_RU.md)
+
+---
+
 ![Voronoi Simulator Screenshot](screenshot.png)
 
-*> Замените этот текст и файл `screenshot.png` на реальный скриншот вашего приложения, чтобы пользователи сразу видели, как оно выглядит.*
+*> Replace this text and the `screenshot.png` file with an actual screenshot of your application so users can immediately see what it looks like.*
 
-## Описание
+## Description
 
-**Voronoi Simulator V2** — это продвинутый симулятор диаграмм Вороного с учетом влияния ветра, разработанный на Python с использованием PyQt6. Проект позволяет моделировать распространение зон влияния сенсоров в условиях внешних воздействий.
+**Voronoi Simulator V2** is an advanced Voronoi diagram simulator that accounts for wind influence, developed in Python using PyQt6. The project allows for modeling the spread of sensor influence zones under external environmental conditions.
 
-### Основные возможности:
-*   🌌 **Генерация диаграмм Вороного:** Классические и взвешенные диаграммы.
-*   💨 **Симуляция ветра:** Учет скорости и направления ветра при расчете границ ячеек.
-*   📊 **Метрики и анализ:** Расчет точность (Ec), покрытия (Ea) и стабильности (Es).
-*   🧪 **Тестирование:** Встроенные инструменты для ручного и автоматического тестирования гипотез.
-*   📈 **Визуализация:** Интерактивное отображение графиков и сеток в реальном времени.
+### Key Features:
+*   🌌 **Voronoi Diagram Generation:** Classical and weighted diagrams.
+*   💨 **Wind Simulation:** Accounts for wind speed and direction when calculating cell boundaries.
+*   📊 **Metrics and Analysis:** Calculation of Accuracy (Ec), Coverage (Ea), and Stability (Es).
+*   🧪 **Testing:** Built-in tools for manual and automated hypothesis testing.
+*   📈 **Visualization:** Interactive display of graphs and grids in real-time.
 
-## Установка и запуск 🚀
+## Installation and Usage 🚀
 
-Для запуска проекта вам понадобится Python 3.9+.
+To run the project, you need Python 3.9+.
 
-1.  **Клонируйте репозиторий:**
+1.  **Clone the repository:**
     ```bash
     git clone https://github.com/Ar1Mi/voronoiSymulator.git
     cd voronoiSymulator
     ```
 
-2.  **Создайте и активируйте виртуальное окружение (рекомендуется):**
+2.  **Create and activate a virtual environment (recommended):**
     ```bash
     python -m venv .venv
-    source .venv/bin/activate  # Для macOS/Linux
-    # или
-    .venv\Scripts\activate     # Для Windows
+    source .venv/bin/activate  # For macOS/Linux
+    # or
+    .venv\Scripts\activate     # For Windows
     ```
 
-3.  **Установите зависимости:**
+3.  **Install dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
 
-4.  **Запустите приложение:**
+4.  **Run the application:**
     ```bash
     python main.py
     ```
 
-## Структура проекта й📂
+## Project Structure 📂
 
-*   `main.py` — Точка входа в приложение.
-*   `simulation.py` — Логика симуляции и расчетов.
-*   `ui/` — Интерфейс пользователя (PyQt6).
-*   `tests/` — Модульные и интеграционные тесты.
-*   `savedSymulations/` — Сохраненные конфигурации симуляций.
+*   `main.py` — Application entry point.
+*   `simulation.py` — Simulation logic and calculations.
+*   `ui/` — User Interface (PyQt6).
+*   `tests/` — Unit and integration tests.
+*   `savedSymulations/` — Saved simulation configurations.
 
-## Автор
+## Author
 
-Разработано в рамках дипломной работы.
+Developed as part of a thesis project.
