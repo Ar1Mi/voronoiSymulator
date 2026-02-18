@@ -46,28 +46,18 @@ class SimulationController(QObject):
         self._create_sim()
         self.sim.reset()
         
-        # Maximum steps to prevent infinite loops
-        max_steps = self.grid_width + self.grid_height + 100
+        # Deterministic termination based on geometry
+        import math
+        target_radius = math.ceil(self.sim.max_distance)
         
-        for step in range(max_steps):
-            prev_grid = self.sim.steps[-1]
+        # Loop until we cover the max distance
+        # We use a safety break just in case, but rely on radius comparison
+        max_safety_steps = self.grid_width + self.grid_height + 1000
+        
+        steps_taken = 0
+        while self.sim.current_radius < target_radius and steps_taken < max_safety_steps:
             self.sim.next_step()
-            curr_grid = self.sim.steps[-1]
-            
-            # Check if any new cells were colored in this step
-            has_changes = False
-            for y in range(self.grid_height):
-                for x in range(self.grid_width):
-                    if prev_grid[y][x].status is None and curr_grid[y][x].status is not None:
-                        has_changes = True
-                        break
-                if has_changes:
-                    break
-            
-            # Stop if no new cells were colored
-            if not has_changes:
-                self.sim.steps.pop()
-                break
+            steps_taken += 1
         
         return len(self.sim.steps) - 1
 

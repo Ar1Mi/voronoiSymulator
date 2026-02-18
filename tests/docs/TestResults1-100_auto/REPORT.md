@@ -1720,6 +1720,7 @@
 | 20 | 0.1240 | 0.5298 | 7.25 | 50.0595 | 0.04 |
 | 25 | 0.1112 | 0.5319 | 8.66 | 51.3810 | 0.03 |
 
+
 ## Visual Analysis
 
 ### Accuracy Error vs Sensor Density

@@ -33,6 +33,7 @@ class MainWindow(QMainWindow):
         self.show_sensor_values = False
         self.show_data_coverage = False
         self.show_true_source = False
+        self.highlight_sensors = False
 
 
         self.sim_controller = SimulationController(
@@ -187,6 +188,7 @@ class MainWindow(QMainWindow):
         controls['checkbox_data_coverage'].stateChanged.connect(self._on_toggle_data_coverage)
         controls['checkbox_true_source'].stateChanged.connect(self._on_toggle_true_source)
         controls['checkbox_error_vector'].stateChanged.connect(self._on_toggle_error_vector)
+        controls['checkbox_highlight_sensors'].stateChanged.connect(self._on_toggle_highlight_sensors)
 
         
         self.sim_controller.sim_finished.connect(self._on_sim_finished)
@@ -296,7 +298,8 @@ class MainWindow(QMainWindow):
             used_csv_indices=used_csv_indices,
             max_source_pos=max_source_pos,
             true_source_pos=self.sim_controller.true_source_pos if self.show_true_source else None,
-            predicted_pos=predicted_pos
+            predicted_pos=predicted_pos,
+            highlight_sensors=self.highlight_sensors
         )
 
         
@@ -328,6 +331,10 @@ class MainWindow(QMainWindow):
         self._update_view()
 
     def _on_toggle_error_vector(self, state):
+        self._update_view()
+
+    def _on_toggle_highlight_sensors(self, state):
+        self.highlight_sensors = self.controls_builder.controls['checkbox_highlight_sensors'].isChecked()
         self._update_view()
 
 

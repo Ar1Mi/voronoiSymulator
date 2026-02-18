@@ -1,0 +1,613 @@
+{
+    "version": 1,
+    "grid": {
+        "width": 100,
+        "height": 100
+    },
+    "wind": {
+        "direction": 0,
+        "strength": 0
+    },
+    "sensors": [
+        {
+            "x": 31,
+            "y": 67,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 65,
+            "y": 26,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 95,
+            "y": 45,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 49,
+            "y": 94,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 93,
+            "y": 14,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 31,
+            "y": 6,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 17,
+            "y": 27,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 31,
+            "y": 18,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 71,
+            "y": 17,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 95,
+            "y": 90,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 83,
+            "y": 4,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 27,
+            "y": 95,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 75,
+            "y": 63,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 59,
+            "y": 94,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 68,
+            "y": 95,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 69,
+            "y": 54,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 81,
+            "y": 71,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 77,
+            "y": 80,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 69,
+            "y": 36,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 86,
+            "y": 30,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 23,
+            "y": 60,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 5,
+            "y": 56,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 55,
+            "y": 85,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 44,
+            "y": 38,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 69,
+            "y": 5,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 40,
+            "y": 64,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 4,
+            "y": 36,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 58,
+            "y": 55,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 47,
+            "y": 28,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 4,
+            "y": 86,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 21,
+            "y": 73,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 66,
+            "y": 64,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 48,
+            "y": 55,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 70,
+            "y": 74,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 94,
+            "y": 4,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 50,
+            "y": 75,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 95,
+            "y": 25,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 40,
+            "y": 75,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 58,
+            "y": 66,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 18,
+            "y": 5,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 61,
+            "y": 14,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 44,
+            "y": 85,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 4,
+            "y": 66,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 84,
+            "y": 20,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 3,
+            "y": 16,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 89,
+            "y": 54,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 49,
+            "y": 66,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 61,
+            "y": 75,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 26,
+            "y": 49,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 76,
+            "y": 27,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 40,
+            "y": 49,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 94,
+            "y": 36,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 87,
+            "y": 78,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 4,
+            "y": 77,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 80,
+            "y": 37,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 15,
+            "y": 50,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 12,
+            "y": 72,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 85,
+            "y": 44,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 37,
+            "y": 29,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 94,
+            "y": 83,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 95,
+            "y": 96,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 42,
+            "y": 5,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 66,
+            "y": 85,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 22,
+            "y": 39,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 33,
+            "y": 86,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 85,
+            "y": 87,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 50,
+            "y": 13,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 75,
+            "y": 87,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 13,
+            "y": 38,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 63,
+            "y": 45,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 55,
+            "y": 23,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 22,
+            "y": 85,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 87,
+            "y": 95,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 85,
+            "y": 62,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 13,
+            "y": 83,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 80,
+            "y": 54,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 57,
+            "y": 35,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 5,
+            "y": 47,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 41,
+            "y": 17,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 33,
+            "y": 40,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 96,
+            "y": 54,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 26,
+            "y": 29,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 12,
+            "y": 15,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 6,
+            "y": 26,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 14,
+            "y": 62,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 91,
+            "y": 69,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 95,
+            "y": 63,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 4,
+            "y": 95,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 38,
+            "y": 95,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 80,
+            "y": 12,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 74,
+            "y": 45,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 22,
+            "y": 15,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 30,
+            "y": 77,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 96,
+            "y": 75,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 15,
+            "y": 94,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 56,
+            "y": 4,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 52,
+            "y": 45,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 78,
+            "y": 95,
+            "pollution_value": 0.0,
+            "polluted": true
+        },
+        {
+            "x": 33,
+            "y": 56,
+            "pollution_value": 0.0,
+            "polluted": true
+        }
+    ]
+}

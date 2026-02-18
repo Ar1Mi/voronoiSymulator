@@ -10,92 +10,92 @@
     },
     "sensors": [
         {
-            "x": 10,
-            "y": 16,
+            "x": 58,
+            "y": 39,
             "pollution_value": 0.0,
             "polluted": true
         },
         {
-            "x": 30,
-            "y": 16,
+            "x": 51,
+            "y": 89,
             "pollution_value": 0.0,
             "polluted": true
         },
         {
-            "x": 50,
-            "y": 16,
+            "x": 37,
+            "y": 13,
             "pollution_value": 0.0,
             "polluted": true
         },
         {
-            "x": 70,
-            "y": 16,
+            "x": 87,
+            "y": 12,
             "pollution_value": 0.0,
             "polluted": true
         },
         {
-            "x": 90,
-            "y": 16,
+            "x": 84,
+            "y": 88,
             "pollution_value": 0.0,
             "polluted": true
         },
         {
-            "x": 10,
-            "y": 50,
+            "x": 33,
+            "y": 40,
             "pollution_value": 0.0,
             "polluted": true
         },
         {
-            "x": 30,
-            "y": 50,
+            "x": 11,
+            "y": 37,
             "pollution_value": 0.0,
             "polluted": true
         },
         {
-            "x": 50,
-            "y": 50,
+            "x": 88,
+            "y": 62,
             "pollution_value": 0.0,
             "polluted": true
         },
         {
-            "x": 70,
-            "y": 50,
+            "x": 12,
+            "y": 12,
             "pollution_value": 0.0,
             "polluted": true
         },
         {
-            "x": 90,
-            "y": 50,
+            "x": 62,
+            "y": 13,
             "pollution_value": 0.0,
             "polluted": true
         },
         {
-            "x": 10,
-            "y": 83,
+            "x": 38,
+            "y": 66,
             "pollution_value": 0.0,
             "polluted": true
         },
         {
-            "x": 30,
-            "y": 83,
+            "x": 85,
+            "y": 37,
             "pollution_value": 0.0,
             "polluted": true
         },
         {
-            "x": 50,
-            "y": 83,
+            "x": 16,
+            "y": 88,
             "pollution_value": 0.0,
             "polluted": true
         },
         {
-            "x": 70,
-            "y": 83,
+            "x": 64,
+            "y": 65,
             "pollution_value": 0.0,
             "polluted": true
         },
         {
-            "x": 90,
-            "y": 83,
+            "x": 12,
+            "y": 63,
             "pollution_value": 0.0,
             "polluted": true
         }

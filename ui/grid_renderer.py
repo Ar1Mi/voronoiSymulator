@@ -10,7 +10,7 @@ class GridRenderer:
         self.grid_width = grid_width
         self.grid_height = grid_height
 
-    def draw(self, grid_data, show_grid, sensors, is_accumulated=False, show_values=False, csv_grid=None, used_csv_indices=None, max_source_pos=None, true_source_pos=None, predicted_pos=None):
+    def draw(self, grid_data, show_grid, sensors, is_accumulated=False, show_values=False, csv_grid=None, used_csv_indices=None, max_source_pos=None, true_source_pos=None, predicted_pos=None, highlight_sensors=False):
         self.scene.clear()
         if is_accumulated:
             self._draw_accumulated(grid_data)
@@ -26,7 +26,7 @@ class GridRenderer:
                 self._draw_error_vector(true_source_pos, predicted_pos)
 
         
-        self._draw_sensors(sensors, show_values)
+        self._draw_sensors(sensors, show_values, highlight_sensors)
         if show_grid:
             self._draw_grid_lines()
 
@@ -114,22 +114,35 @@ class GridRenderer:
                 r.setPen(QPen(Qt.PenStyle.NoPen))
                 self.scene.addItem(r)
 
-    def _draw_sensors(self, sensors, show_values=False):
+    def _draw_sensors(self, sensors, show_values=False, highlight_sensors=False):
         if not sensors:
             return
 
-        # Find max pollution value to highlight the sensor
+        # Find max pollution value to highlight the sensor (winner)
         max_pollution = -1
         for s in sensors:
             if s.pollution_value > max_pollution:
                 max_pollution = s.pollution_value
         
         for s in sensors:
+            # If highlighting enabled, draw red cell background
+            if highlight_sensors:
+                # Cell background
+                r_x = s.x * CELL_SIZE
+                r_y = s.y * CELL_SIZE
+                
+                # Bright Red/Pinkish fill with some transparency
+                high_col = QColor(255, 23, 68, 150) # Red accent 400
+                high_rect = QGraphicsRectItem(r_x, r_y, CELL_SIZE, CELL_SIZE)
+                high_rect.setBrush(QBrush(high_col))
+                high_rect.setPen(QPen(Qt.PenStyle.NoPen))
+                self.scene.addItem(high_rect)
+
             cx = s.x * CELL_SIZE + CELL_SIZE / 2
             cy = s.y * CELL_SIZE + CELL_SIZE / 2
             rad = CELL_SIZE / 6
             
-            # Highlight the sensor with max pollution
+            # Highlight the sensor with max pollution (standard logic)
             if s.pollution_value == max_pollution and max_pollution > 0:
                 # Max pollution sensor: Red with thicker border
                 brush_color = QColor("#ff1744") # Bright Red / Pinkish

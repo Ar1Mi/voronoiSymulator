@@ -143,6 +143,11 @@ class ControlsBuilder:
         data_buttons_layout.addWidget(b_load)
         data_layout.addLayout(data_buttons_layout)
 
+        # Highlight Sensors Checkbox (Visual)
+        checkbox_highlight = QCheckBox("Wyróżnij sensory (czerwony)")
+        self.controls['checkbox_highlight_sensors'] = checkbox_highlight
+        data_layout.addWidget(checkbox_highlight)
+
         b_import = QPushButton("Importuj Zanieczyszczenie")
         self.controls['import_csv_btn'] = b_import
         data_layout.addWidget(b_import)

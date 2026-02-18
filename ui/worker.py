@@ -54,11 +54,6 @@ class SimulationWorker(QThread):
             start_time = time.time()
             n_sensors = len(self.sensors)
             if n_sensors < 2:
-                # Need at least 2 sensors for multi-cycle logic
-                # Handling the case where we can't run the multi-cycle logic gracefully
-                # Or maybe we just run 1 cycle? The controller previously returned.
-                # Let's just return empty lists or handle it.
-                # If we return empty, the UI should handle it.
                 self.finished.emit([], [], [], 0.0)
                 return
 
@@ -67,28 +62,37 @@ class SimulationWorker(QThread):
             # Sort sensors
             clean_order = sorted(range(n_sensors), key=lambda k: self.sensors[k].pollution_value)
             
+            # Create SimulationManager ONCE (Pre-calculates geometry)
+            # This is the heavy lifting, done only once.
+            base_sim = self._create_sim()
+            
             total_cycles = n_sensors - 1
             for i in range(1, n_sensors):
-                # Calculate progress percentage
-                # i goes from 1 to n_sensors-1. Total iterations = n_sensors-1.
-                # Current iteration is i.
-                # Progress = (i-1) / total_cycles * 100 at start, or i / total_cycles * 100 at end?
-                # Let's emit at start of cycle
                 current_progress = int(((i - 1) / total_cycles) * 100)
                 self.progress.emit(current_progress)
 
                 num_clean = i
                 clean_indices = set(clean_order[:num_clean])
                 
-                for idx, s in enumerate(self.sensors):
+                # Update sensor statuses in the single sim instance
+                for idx, s in enumerate(base_sim.sensors):
                     s.polluted = idx not in clean_indices
                 
-                sim = self._create_sim()
-                self._run_single_sim_cycle(sim)
-                # Store final grid and step count for UI "on-the-fly" reconstruction
+                # OPTIMIZATION:
+                # Instead of running step-by-step, we just ask for the final grid
+                # based on the pre-calculated Voronoi map.
+                final_grid = base_sim.compute_final_grid()
+                
+                # We store only the final grid. Step count is effectively max_distance or just ignored.
+                # If UI needs to see animation of "weighted sum cycles", it can't anymore
+                # but usually weighted sum is just a calculation result.
+                # If we need steps for UI, we could generate them, but that defeats optimization.
+                # Assuming 'cycle_results' is mainly for the 'Cycle View' slider which shows FINAL state of each cycle.
+                
+                import math
                 self.cycle_results.append({
-                    'final_grid': sim.steps[-1],
-                    'step_count': len(sim.steps) - 1
+                    'final_grid': final_grid,
+                    'step_count': math.ceil(base_sim.max_distance) + 1 # Include +1 for radius coverage
                 })
 
             self._calculate_accumulation()
